@@ -414,3 +414,19 @@ INSERT INTO audit_logs VALUES (seq_audit_logs.NEXTVAL, 'system_config', 'UPDATE'
 INSERT INTO audit_logs VALUES (seq_audit_logs.NEXTVAL, 'user_sessions', 'INSERT', 'admin_session_101', NULL, 'New Login Session', 'admin', SYSDATE, '192.168.1.1', 'SUCCESS');
 COMMIT;
 
+-- Insert Rwanda Public Holidays (2025-2026)
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'New Year''s Day', TO_DATE('2025-01-01', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Genocide Memorial Day', TO_DATE('2025-04-07', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Labour Day', TO_DATE('2025-05-01', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Independence Day', TO_DATE('2025-07-01', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Liberation Day', TO_DATE('2025-07-04', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Umuganura Day', TO_DATE('2025-08-02', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Christmas Day', TO_DATE('2025-12-25', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Boxing Day', TO_DATE('2025-12-26', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+
+-- 2026 Holidays
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'New Year''s Day 2026', TO_DATE('2026-01-01', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Genocide Memorial Day 2026', TO_DATE('2026-04-07', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+INSERT INTO public_holidays VALUES (seq_holidays.NEXTVAL, 'Labour Day 2026', TO_DATE('2026-05-01', 'YYYY-MM-DD'), 'Rwanda', 'Y', SYSDATE);
+
+COMMIT;
