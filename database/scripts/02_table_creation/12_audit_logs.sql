@@ -17,3 +17,11 @@ CREATE TABLE audit_logs (
     is_holiday CHAR(1) DEFAULT 'N',
     holiday_name VARCHAR2(100)
 );
+
+-- Create sequence for audit_id
+CREATE SEQUENCE seq_audit_logs START WITH 1 INCREMENT BY 1 NOCACHE;
+
+-- Create indexes for performance
+CREATE INDEX idx_audit_date ON audit_logs(operation_date);
+CREATE INDEX idx_audit_table ON audit_logs(table_name);
+CREATE INDEX idx_audit_status ON audit_logs(operation_status);
