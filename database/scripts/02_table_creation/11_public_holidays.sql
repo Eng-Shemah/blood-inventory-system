@@ -7,3 +7,5 @@ CREATE TABLE public_holidays (
     created_date DATE DEFAULT SYSDATE,
     CONSTRAINT uk_holiday_date UNIQUE (holiday_date, country)
 );
+
+CREATE SEQUENCE seq_holidays START WITH 1 INCREMENT BY 1 NOCACHE;
