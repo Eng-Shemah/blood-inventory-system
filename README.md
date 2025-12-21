@@ -431,7 +431,8 @@ ORDER BY month DESC;
 
 - **[Data Dictionary](documentation/data_dictionary.md)** - Complete table and column definitions
 - **[Architecture Guide](documentation/architecture.md)** - System design and structure
-- **[User Manual](documentation/user_guide.md)** - End-user instructions
+- **[User Manual](database/documentation/user_guide.md)** - End-user instructions
+- **[Setup Instructions](database/documentation/setup_instructions.md)** - Setup instructions
 - **[BI Requirements](business_intelligence/bi_requirements.md)** - Analytics specifications
 - **[API Documentation](documentation/api_docs.md)** - Procedure/function reference
 
