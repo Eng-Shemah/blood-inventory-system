@@ -1,30 +1,30 @@
 # Smart Blood Inventory Management & Shortage Prediction System
 
-## 📋 Project Overview
+## Project Overview
 
 A comprehensive PL/SQL-based healthcare database system designed to manage blood donations, track inventory levels, monitor expiry dates, and predict upcoming shortages using business intelligence. The system analyzes transfusion trends, donation patterns, and stock usage to help hospitals optimize blood availability and reduce waste.
 
 ---
 
-## 👨‍🎓 Student Information
+## Student Information
 
-- **Student Name:** [Your Name]
-- **Student ID:** [Your Student ID]
+- **Student Name:** SHEMA Gwiza Robert
+- **Student ID:** 27949
 - **Course:** Database Development with PL/SQL (INSY 8311)
 - **Institution:** Adventist University of Central Africa (AUCA)
 - **Lecturer:** Eric Maniraguha
 - **Academic Year:** 2025-2026 | Semester I
-- **Project Completion Date:** December 7, 2025
+- **Project Completion Date:** December 21, 2025
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Blood banks in healthcare facilities face critical challenges in managing inventory effectively, leading to blood shortages during emergencies and wastage due to expiration. Manual tracking systems fail to predict shortages in advance, resulting in delayed patient care and inefficient resource allocation. This system provides real-time inventory monitoring, automated expiry alerts, and predictive analytics to ensure optimal blood availability while minimizing waste.
 
 ---
 
-## 🚀 Key Objectives
+## Key Objectives
 
 1. **Efficient Blood Inventory Management** - Real-time tracking of blood units by type, status, and location
 2. **Donor Management** - Comprehensive donor records with donation history and eligibility tracking
@@ -37,11 +37,11 @@ Blood banks in healthcare facilities face critical challenges in managing invent
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Database Components
 
-- **Oracle Pluggable Database (PDB):** `[YourGroup]_[StudentID]_[FirstName]_BloodInventory_DB`
+- **Oracle Pluggable Database (PDB):** `tues_27949_robert_BloodInventory_DB`
 - **Total Tables:** 7 main tables + 2 audit/configuration tables
 - **Total Records:** 1000+ across all tables
 - **PL/SQL Objects:** 20+ procedures, functions, triggers, and packages
@@ -49,7 +49,7 @@ Blood banks in healthcare facilities face critical challenges in managing invent
 
 ### Technology Stack
 
-- **Database:** Oracle 19c/21c
+- **Database:** Oracle 21c
 - **Language:** PL/SQL
 - **Development Tools:** SQL Developer, SQL*Plus
 - **Version Control:** GitHub
@@ -57,7 +57,7 @@ Blood banks in healthcare facilities face critical challenges in managing invent
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 ### Core Tables
 
@@ -72,12 +72,12 @@ Blood banks in healthcare facilities face critical challenges in managing invent
 
 ---
 
-## ⚡ Quick Start Guide
+## Quick Start Guide
 
 ### Prerequisites
 
 ```bash
-- Oracle Database 19c or higher
+- Oracle Database 21c
 - SQL Developer or SQL*Plus
 - Minimum 500MB tablespace
 - SYS/SYSTEM privileges for PDB creation
@@ -224,7 +224,7 @@ blood-inventory-system/
 
 ---
 
-## 🔧 Core Functionality
+## Core Functionality
 
 ### 1. Donor Management
 
@@ -293,7 +293,7 @@ FROM (SELECT DISTINCT blood_type FROM blood_units);
 
 ---
 
-## 📈 Business Intelligence Features
+## Business Intelligence Features
 
 ### Key Performance Indicators (KPIs)
 
@@ -350,14 +350,14 @@ FROM (
 
 ---
 
-## 🛡️ Security & Auditing
+## Security & Auditing
 
 ### Business Rules Enforced
 
-- ✅ **Weekday Restriction:** DML operations BLOCKED Monday-Friday
-- ✅ **Weekend Access:** Operations ALLOWED Saturday-Sunday
-- ✅ **Holiday Protection:** Public holidays automatically blocked
-- ✅ **Comprehensive Auditing:** All operations logged with user details
+-  **Weekday Restriction:** DML operations BLOCKED Monday-Friday
+-  **Weekend Access:** Operations ALLOWED Saturday-Sunday
+-  **Holiday Protection:** Public holidays automatically blocked
+-  **Comprehensive Auditing:** All operations logged with user details
 
 ### Audit Queries
 
@@ -374,7 +374,7 @@ EXEC sp_generate_audit_report(SYSDATE-30, SYSDATE);
 
 ---
 
-## 📊 Sample Queries & Reports
+## Sample Queries & Reports
 
 ### Daily Inventory Report
 
@@ -405,7 +405,7 @@ ORDER BY month DESC;
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Run All Tests
 
@@ -419,15 +419,15 @@ ORDER BY month DESC;
 
 ### Expected Test Results
 
-- ✅ 20+ test cases pass
-- ✅ All procedures execute without errors
-- ✅ All functions return correct values
-- ✅ Triggers block weekday operations
-- ✅ Audit logs capture all attempts
+-  20+ test cases pass
+-  All procedures execute without errors
+-  All functions return correct values
+-  Triggers block weekday operations
+-  Audit logs capture all attempts
 
 ---
 
-## 📖 Documentation Links
+##  Documentation Links
 
 - **[Data Dictionary](documentation/data_dictionary.md)** - Complete table and column definitions
 - **[Architecture Guide](documentation/architecture.md)** - System design and structure
@@ -437,24 +437,17 @@ ORDER BY month DESC;
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 This is an academic project. For questions or suggestions:
 
-- **Email:** [Your Email]
+- **Email:** shemagwizarobert250@gmail.com
 - **Lecturer:** eric.maniraguha@auca.ac.rw
 - **GitHub Issues:** [Repository Issues Page]
 
 ---
 
-## 📜 License
-
-This project is submitted as part of academic coursework at AUCA.  
-All rights reserved © 2025
-
----
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Lecturer:** Eric Maniraguha for guidance and instruction
 - **AUCA:** For providing the learning environment
@@ -462,18 +455,10 @@ All rights reserved © 2025
 
 ---
 
-## 📞 Support
+## Support
 
 For technical support or questions:
 
 1. Check the [documentation folder](documentation/)
 2. Review [test results](tests/)
-3. Contact: [Your Email]
-
----
-
-**"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."** — Colossians 3:23 (NIV)
-
----
-
-*Last Updated: December 2025*
+3. Contact: shemagwizarobert250@gmail.com
