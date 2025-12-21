@@ -420,8 +420,3 @@ INSERT INTO donors VALUES (seq_donors.NEXTVAL, ...);
 | Total Constraints | 40+ |
 | Sample Data Records | 1,000+ |
 | Estimated Size | 150MB |
-
----
-
-*Last Updated: December 2025*
-*Version: 1.0*
